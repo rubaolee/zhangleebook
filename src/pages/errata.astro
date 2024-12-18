@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Error from '../components/Error.astro';
+import { Image } from 'astro:assets';
+
+import cover from '../../public/zhangleebook.png';
+---
+
+<Layout>
+	<Image class="float-left w-[30em] ml-52" src={cover} alt="Front cover of the book Data Management Interactions with Computer Architecture and Systems"/>
+	<section class="flex flex-row justify-center mr-52 text-sky-200">
+		<div class="mt-7">
+			<h1 class="text-6xl text-amber-400">Errata</h1>
+			<p class="text-xl mb-5">Please submit errors to <a class="hover:underline text-sky-100" href="mailto:">lee.lestat@gmail.com</a></p>
+
+			<ul class="list-disc list-outside marker:text-4xl marker:ml-[-5em]">
+				<li>
+					<Error
+						page="0"
+						line="0"
+						original="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						change="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						reporter="John Reporter"
+						date="00/00/0000"
+						severity="0"
+					/>
+				</li>
+				<li>
+					<Error
+						page="0"
+						line="0"
+						original="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						change="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						reporter="John Reporter"
+						date="00/00/0000"
+						severity="0"
+					/>
+				</li>
+				<li>
+					<Error
+						page="0"
+						line="0"
+						original="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						change="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						reporter="John Reporter"
+						date="00/00/0000"
+						severity="0"
+					/>
+				</li>
+			</ul>
+		</div>
+	</section>
+</Layout>
