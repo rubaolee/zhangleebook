@@ -7,13 +7,15 @@ import cover from '../../public/zhangleebook.png';
 ---
 
 <Layout>
-	<Image class="float-left w-[30em] ml-52" src={cover} alt="Front cover of the book Data Management Interactions with Computer Architecture and Systems"/>
-	<section class="flex flex-row justify-center mr-52 text-sky-200">
+	<div class="flex flex-row justify-center lg:inline">
+		<Image class="lg:float-left flex w-72 lg:w-[30em] lg:ml-52" src={cover} alt="Front cover of the book Data Management Interactions with Computer Architecture and Systems"/>
+	</div>
+	<section class="flex flex-row justify-center lg:mr-52 text-sky-200 mx-7">
 		<div class="mt-7">
-			<h1 class="text-6xl text-amber-400">Errata</h1>
-			<p class="text-xl mb-5">Please submit errors to <a class="hover:underline text-sky-100" href="mailto:">lee.lestat@gmail.com</a></p>
+			<h1 class="text-4xl text-center lg:text-left lg:text-6xl text-amber-400">Errata</h1>
+			<p class="text-xl text-center lg:text-left mb-5">Please submit errors to <a class="hover:underline text-sky-100" href="mailto:">lee.lestat@gmail.com</a></p>
 
-			<ul class="list-disc list-outside marker:text-4xl marker:ml-[-5em]">
+			<ul class="list-disc list-outside marker:text-4xl marker:ml-[-5em] ml-5">
 				<li>
 					<Error
 						page="0"
@@ -22,7 +24,6 @@ import cover from '../../public/zhangleebook.png';
 						change="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 						reporter="John Reporter"
 						date="00/00/0000"
-						severity="0"
 					/>
 				</li>
 				<li>
@@ -33,7 +34,6 @@ import cover from '../../public/zhangleebook.png';
 						change="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 						reporter="John Reporter"
 						date="00/00/0000"
-						severity="0"
 					/>
 				</li>
 				<li>
@@ -44,7 +44,6 @@ import cover from '../../public/zhangleebook.png';
 						change="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 						reporter="John Reporter"
 						date="00/00/0000"
-						severity="0"
 					/>
 				</li>
 			</ul>
