@@ -6,25 +6,28 @@ import cover from '../../public/zhangleebook.png';
 ---
 
 <Layout>
-	<div class="flex flex-row justify-center md:inline">
-		<Image class="lg:float-left flex w-72 lg:w-[30em] lg:ml-52" src={cover} alt="Front cover of the book Data Management Interactions with Computer Architecture and Systems"/>
-	</div>
-	<section class="flex flex-row justify-center lg:mr-52 text-sky-200 mx-7 lg:mx-0">
-		<div class="mt-7 lg:ml-16">
-			<h1 class="text-4xl lg:text-6xl text-amber-400">Data Management</h1>
-			<h2 class="text-3xl lg:text-4xl text-slate-200 lg:ml-[2em]">Interactions with Computer Architecture and Systems</h2>
-			<h2 class="text-2xl lg:text-3xl text-slate-200 mt-10">Authors</h2>
-			<h3 class="text-xl text-amber-400">Xiaodong Zhang</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in eleifend mi. Nullam sit amet urna sit amet tellus varius placerat.</p>
-			<h3 class="text-xl text-amber-400">Rubao Lee</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in eleifend mi. Nullam sit amet urna sit amet tellus varius placerat.</p>
-
-			<h2 class="text-2xl lg:text-3xl text-slate-200 mt-5">Description</h2>
-			<p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in eleifend mi. Nullam sit amet urna sit amet tellus varius placerat. Integer tempus mauris vel odio interdum, sed rhoncus leo suscipit. Fusce ac elementum neque. Ut pretium egestas pretium. Ut egestas luctus mi, non lacinia felis ultricies nec. Aliquam non augue ut risus laoreet feugiat. Aliquam placerat ex sed velit molestie, quis mattis turpis feugiat. Suspendisse ut est orci. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-
-			<a class="bg-slate-400 hover:bg-slate-300 text-black text-4xl px-3 pt-3 rounded-2xl" href="https://www.amazon.com/Data-Management-Interactions-Computer-Architecture/dp/1009123319/" target="_blank">
-				<button>View on Amazon</button>
-			</a>
+	<div class="lg:flex lg:flex-row lg:justify-center lg:space-x-28">
+		<div class="flex flex-row justify-center">
+			<Image class="lg:float-left flex w-72 lg:w-[30em] lg:ml-52" src={cover} alt="Front cover of the book Data Management Interactions with Computer Architecture and Systems"/>
 		</div>
-	</section>
+		<section class="lg:mr-52 text-sky-200 mx-7">
+			<div class="mt-7">
+				<h1 class="text-4xl lg:text-6xl text-center lg:text-left text-amber-400">Data Management</h1>
+				<h2 class="text-3xl lg:text-4xl text-center lg:text-left text-slate-200 lg:ml-[2em]">Interactions with Computer Architecture and Systems</h2>
+				<h2 class="text-2xl lg:text-3xl text-slate-200 mt-10">Authors</h2>
+				<h3 class="text-xl text-amber-400">Xiaodong Zhang</h3>
+				<p class="lg:max-w-6xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in eleifend mi. Nullam sit amet urna sit amet tellus varius placerat.</p>
+				<h3 class="text-xl text-amber-400">Rubao Lee</h3>
+				<p class="lg:max-w-6xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in eleifend mi. Nullam sit amet urna sit amet tellus varius placerat.</p>
+
+				<h2 class="text-2xl lg:text-3xl text-slate-200 mt-5">Description</h2>
+				<p class="mb-10 mr-16 lg:max-w-6xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in eleifend mi. Nullam sit amet urna sit amet tellus varius placerat. Integer tempus mauris vel odio interdum, sed rhoncus leo suscipit. Fusce ac elementum neque. Ut pretium egestas pretium. Ut egestas luctus mi, non lacinia felis ultricies nec. Aliquam non augue ut risus laoreet feugiat. Aliquam placerat ex sed velit molestie, quis mattis turpis feugiat. Suspendisse ut est orci. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+				
+				<a class="bg-slate-400 hover:bg-slate-300 text-black text-4xl px-3 pt-3 rounded-2xl" href="https://www.amazon.com/Data-Management-Interactions-Computer-Architecture/dp/1009123319/" target="_blank">
+					<button>View on Amazon</button>
+				</a>
+			</div>
+		</section>
+	</div>
+	
 </Layout>

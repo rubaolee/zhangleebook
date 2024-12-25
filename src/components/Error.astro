@@ -3,7 +3,7 @@ const { page, line, original, change, reporter, date } = Astro.props;
 ---
 
 <div class="inline mt-4">
-    <p class="inline">Page {page}, line {line}<br>
+    <p class="inline max-w-5xl">Page {page}, line {line}<br>
         Reported by {reporter} on {date}<br>
         Change <span class="underline decoration-1">{original}</span> to <span class="underline decoration-1">{change}</span><br>
     </p>
