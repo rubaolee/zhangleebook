@@ -90,6 +90,10 @@ img {
     box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
 }
 
+.cover-actions {
+    margin-top: 14px;
+}
+
 .hero-copy h1,
 .panel h1,
 .panel h2,
@@ -128,6 +132,11 @@ img {
     border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
+}
+
+.button-block {
+    display: block;
+    text-align: center;
 }
 
 .button-primary {
