@@ -25,7 +25,7 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir dist
-          cp index.html errata.html contact.html styles.css dist/
+          cp index.html introduction.html errata.html contact.html styles.css dist/
           cp -R public dist/public
 
       - name: Upload Pages artifact
