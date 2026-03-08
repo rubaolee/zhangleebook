@@ -7,49 +7,28 @@ import cover from '../../public/zhangleebook.png';
 ---
 
 <Layout>
-	<div class="lg:flex lg:flex-row lg:justify-center lg:space-x-32">
-		<div class="flex flex-row justify-center lg:mr-16">
-			<Image class="lg:float-left flex w-72 lg:w-[30em] lg:ml-52" src={cover} alt="Front cover of the book Data Management Interactions with Computer Architecture and Systems"/>
+	<div class="mx-6 grid gap-12 lg:mx-10 lg:grid-cols-[minmax(280px,420px)_minmax(0,720px)] lg:items-start lg:justify-center">
+		<div class="flex justify-center">
+			<Image class="w-72 rounded-2xl border border-slate-800 shadow-2xl lg:w-[24rem]" src={cover} alt="Front cover of the book Data Management Interactions with Computer Architecture and Systems"/>
 		</div>
-		<section class="lg:mr-52 text-sky-200 mx-7 lg:mx-0">
-			<div class="mt-7">
-				<h1 class="text-4xl text-center lg:text-left lg:text-6xl text-amber-400">Errata</h1>
-				<p class="text-xl text-center lg:text-left mb-5">Please submit errors to <a class="hover:underline text-sky-100" href="mailto:">lee.lestat@gmail.com</a></p>
-				<ul class="list-disc list-outside marker:text-4xl marker:ml-[-5em] ml-10 mr-5">
-					<li>
-						<Error
-							page="0"
-							line="0"
-							original="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-							change="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-							reporter="John Reporter"
-							date="00/00/0000"
-						/>
-					</li>
-					<li>
-						<Error
-							page="0"
-							line="0"
-							original="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-							change="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-							reporter="John Reporter"
-							date="00/00/0000"
-						/>
-					</li>
-					<li>
-						<Error
-							page="0"
-							line="0"
-							original="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-							change="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-							reporter="John Reporter"
-							date="00/00/0000"
-						/>
-					</li>
-				</ul>
-				
+		<section class="text-slate-200">
+			<div class="rounded-3xl border border-slate-800 bg-slate-900/70 p-8 shadow-xl">
+				<h1 class="text-4xl text-amber-300 lg:text-6xl">Errata</h1>
+				<p class="mt-4 text-lg text-slate-300">
+					Please report errors to
+					<a class="font-semibold text-sky-300 hover:underline" href="mailto:lee.rubao@ieee.org">lee.rubao@ieee.org</a>.
+				</p>
+				<div class="mt-8">
+					<Error
+						page="N/A"
+						line="N/A"
+						original="No errata posted yet"
+						change="Updates will appear here as corrections are collected"
+						reporter="Site editor"
+						date="March 8, 2026"
+					/>
+				</div>
 			</div>
 		</section>
 	</div>
-	
 </Layout>
