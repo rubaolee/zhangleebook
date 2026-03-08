@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Image } from 'astro:assets';
 
 import cover from '../../public/zhangleebook.png';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout>
@@ -32,7 +33,7 @@ import cover from '../../public/zhangleebook.png';
 					<a class="rounded-xl bg-amber-300 px-5 py-3 text-lg font-semibold text-slate-950 transition hover:bg-amber-200" href="https://www.amazon.com/Data-Management-Interactions-Computer-Architecture/dp/1009123319/" target="_blank">
 						Available on Amazon
 					</a>
-					<a class="rounded-xl border border-slate-700 px-5 py-3 text-lg font-semibold text-slate-100 transition hover:border-slate-500 hover:bg-slate-800" href="/errata">
+					<a class="rounded-xl border border-slate-700 px-5 py-3 text-lg font-semibold text-slate-100 transition hover:border-slate-500 hover:bg-slate-800" href={`${base}errata`}>
 						View Errata
 					</a>
 				</div>
